@@ -4,35 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="SBG Apparel — Higher Quality. Worn For A Higher Purpose.">
-    <title>SBG Apparel | Higher Quality. Higher Purpose.</title>
+    <meta name="description" content="SBG Apparel — Higher Quality. Worn For A Higher Purpose. Faith-driven Christian apparel.">
+    <title>SBG Apparel | Worn For A Higher Purpose</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+
     <!-- Custom Cursor -->
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
 
-    <!-- Site Header (sticky wrapper) -->
+    <!-- ==================== SITE HEADER ==================== -->
     <header class="site-header">
-        <!-- Announcement Bar -->
         <div class="announcement-bar">
             <p>Free Shipping on orders over $75 &nbsp;&middot;&nbsp; Use code <strong>KINGDOM</strong> at checkout</p>
         </div>
-
-        <!-- Navigation -->
         <nav class="navbar">
             <div class="nav-container">
-                <a href="#" class="nav-brand">SBG</a>
+                <a href="#" class="nav-brand">
+                    <span class="brand-sbg">SBG</span>
+                    <span class="brand-sub">APPAREL</span>
+                </a>
                 <div class="nav-links">
-                    <a href="#">Hats</a>
-                    <a href="#">Hoodies</a>
-                    <a href="#">T-Shirts</a>
-                    <a href="#">Collections</a>
+                    <a href="#featured">Hats</a>
+                    <a href="#featured">Hoodies</a>
+                    <a href="#featured">T-Shirts</a>
+                    <a href="#collections">Collections</a>
                 </div>
                 <div class="nav-actions">
                     <button class="icon-btn" aria-label="Search">
@@ -55,8 +56,6 @@
                 </div>
             </div>
         </nav>
-
-        <!-- Mobile Menu -->
         <div class="mobile-menu">
             <div class="mobile-menu-inner">
                 <a href="#">Hats</a>
@@ -68,18 +67,42 @@
     </header>
 
     <main>
+
         <!-- ==================== HERO ==================== -->
         <section class="hero">
             <div class="hero-bg"></div>
             <div class="hero-overlay"></div>
             <div class="hero-content reveal">
-                <span class="hero-label">New Season &nbsp;&middot;&nbsp; Spring 2026</span>
-                <h1>Higher<br>Quality.<br>Higher<br>Purpose.</h1>
-                <a href="#featured" class="btn-primary">Shop Now &rarr;</a>
+                <div class="cross-icon" aria-hidden="true">
+                    <svg width="28" height="36" viewBox="0 0 28 36" fill="none">
+                        <rect x="11" y="0" width="6" height="36" fill="currentColor"/>
+                        <rect x="0" y="10" width="28" height="6" fill="currentColor"/>
+                    </svg>
+                </div>
+                <span class="hero-label">Faith Forward &nbsp;&middot;&nbsp; Since 2020</span>
+                <h1>Worn For A<br>Higher<br>Purpose.</h1>
+                <p class="hero-verse">"I can do all things through Christ who strengthens me." &mdash; Phil. 4:13</p>
+                <div class="hero-ctas">
+                    <a href="#featured" class="btn-light">Shop Now &rarr;</a>
+                    <a href="#our-why" class="btn-ghost-light">Our Story</a>
+                </div>
             </div>
-            <div class="hero-scroll reveal" style="transition-delay: 0.5s">
+            <div class="hero-scroll-indicator reveal" style="transition-delay:0.5s">
                 <span>Scroll</span>
                 <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- ==================== OPENING VERSE ==================== -->
+        <section class="opening-verse">
+            <div class="container">
+                <div class="verse-block reveal">
+                    <div class="verse-cross" aria-hidden="true">+</div>
+                    <blockquote class="verse-quote">
+                        "For we are God's handiwork, created in Christ Jesus to do good works,<br>which God prepared in advance for us to do."
+                    </blockquote>
+                    <cite class="verse-cite">Ephesians 2:10</cite>
+                </div>
             </div>
         </section>
 
@@ -88,82 +111,170 @@
             <div class="container">
                 <div class="section-header reveal">
                     <span class="section-label">Featured Drops</span>
+                    <a href="#" class="view-all">View All &rarr;</a>
                 </div>
                 <div class="products-grid">
-                    <div class="product-card reveal" style="transition-delay: 0s">
+                    <div class="product-card reveal" style="transition-delay:0s">
                         <div class="product-img-wrap">
-                            <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1556821840-3a63f15732ce?w=700&q=85&auto=format&fit=crop')"></div>
-                            <div class="quick-add">Quick Add</div>
+                            <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1556821840-3a63f15732ce?w=700&q=85&auto=format&fit=crop')"></div>
+                            <div class="quick-add">+ Quick Add</div>
+                            <div class="product-badge">Bestseller</div>
                         </div>
                         <div class="product-info">
                             <h4>Classic Crown Hoodie</h4>
                             <span class="product-price">$55.00</span>
                         </div>
+                        <p class="product-verse-tag">Phil. 4:13</p>
                     </div>
-                    <div class="product-card reveal" style="transition-delay: 0.08s">
+                    <div class="product-card reveal" style="transition-delay:0.08s">
                         <div class="product-img-wrap">
-                            <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=700&q=85&auto=format&fit=crop')"></div>
-                            <div class="quick-add">Quick Add</div>
+                            <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=700&q=85&auto=format&fit=crop')"></div>
+                            <div class="quick-add">+ Quick Add</div>
                         </div>
                         <div class="product-info">
                             <h4>Kingdom Tee</h4>
                             <span class="product-price">$35.00</span>
                         </div>
+                        <p class="product-verse-tag">Matt. 6:33</p>
                     </div>
-                    <div class="product-card reveal" style="transition-delay: 0.16s">
+                    <div class="product-card reveal" style="transition-delay:0.16s">
                         <div class="product-img-wrap">
-                            <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=700&q=85&auto=format&fit=crop')"></div>
-                            <div class="quick-add">Quick Add</div>
+                            <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=700&q=85&auto=format&fit=crop')"></div>
+                            <div class="quick-add">+ Quick Add</div>
+                            <div class="product-badge new">New</div>
                         </div>
                         <div class="product-info">
                             <h4>Chosen Cap</h4>
                             <span class="product-price">$40.00</span>
                         </div>
+                        <p class="product-verse-tag">1 Pet. 2:9</p>
                     </div>
-                    <div class="product-card reveal" style="transition-delay: 0.24s">
+                    <div class="product-card reveal" style="transition-delay:0.24s">
                         <div class="product-img-wrap">
-                            <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1562157873-818bc0726f68?w=700&q=85&auto=format&fit=crop')"></div>
-                            <div class="quick-add">Quick Add</div>
+                            <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1562157873-818bc0726f68?w=700&q=85&auto=format&fit=crop')"></div>
+                            <div class="quick-add">+ Quick Add</div>
                         </div>
                         <div class="product-info">
                             <h4>Sanctified Crewneck</h4>
                             <span class="product-price">$60.00</span>
                         </div>
+                        <p class="product-verse-tag">1 Cor. 6:11</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ==================== BRAND MANIFESTO ==================== -->
-        <section class="manifesto">
+        <!-- ==================== OUR WHY ==================== -->
+        <section id="our-why" class="our-why">
+            <div class="our-why-grid">
+                <div class="our-why-image reveal">
+                    <div class="our-why-img-bg" style="background-image:url('https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?w=900&q=85&auto=format&fit=crop')"></div>
+                </div>
+                <div class="our-why-text reveal" style="transition-delay:0.15s">
+                    <div class="why-inner">
+                        <div class="cross-small" aria-hidden="true">&#10010;</div>
+                        <span class="section-label">Why We Exist</span>
+                        <h2>Built On Faith.<br>Worn With Purpose.</h2>
+                        <p>SBG Apparel was born from a simple conviction: your clothing should reflect your calling. We create premium faith-driven apparel for believers who aren't afraid to wear their identity in Christ — on the streets, in the gym, in the boardroom.</p>
+                        <p>Every piece we design is rooted in Scripture, crafted with excellence, and made to spark conversations that matter.</p>
+                        <a href="#" class="btn-dark">Read Our Story &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SCRIPTURE BANNER ==================== -->
+        <section class="scripture-banner">
             <div class="container">
-                <div class="manifesto-content reveal">
-                    <span class="section-label light">Our Mission</span>
-                    <blockquote>"Crafted With Purpose.<br>Worn With Conviction."</blockquote>
-                    <p>Every stitch is a statement of faith. We don't just make clothes&mdash;we make declarations. SBG Apparel exists for those who wear their beliefs on their sleeve, literally. Built from the ground up with quality that honors the one who created you.</p>
+                <div class="scripture-banner-inner reveal">
+                    <span class="scripture-ref">Romans 8:37</span>
+                    <p class="scripture-text">"In all these things we are more than conquerors<br>through him who loved us."</p>
                 </div>
             </div>
         </section>
 
         <!-- ==================== COLLECTIONS ==================== -->
-        <section class="collections-section">
+        <section id="collections" class="collections-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-label">Shop By Collection</span>
+                </div>
+            </div>
             <div class="collections-grid">
-                <div class="collection-tile reveal">
-                    <div class="collection-bg" style="background-image: url('https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?w=1000&q=85&auto=format&fit=crop')"></div>
+                <div class="collection-tile reveal" style="transition-delay:0s">
+                    <div class="collection-bg" style="background-image:url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=900&q=85&auto=format&fit=crop')"></div>
                     <div class="collection-overlay"></div>
                     <div class="collection-content">
-                        <span class="collection-tag">Collection</span>
+                        <span class="collection-tag">Collection I</span>
                         <h3>Crowned</h3>
+                        <span class="collection-verse">Rev. 2:10</span>
                         <span class="collection-cta">Explore &rarr;</span>
                     </div>
                 </div>
-                <div class="collection-tile reveal" style="transition-delay: 0.15s">
-                    <div class="collection-bg" style="background-image: url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=1000&q=85&auto=format&fit=crop')"></div>
+                <div class="collection-tile reveal" style="transition-delay:0.1s">
+                    <div class="collection-bg" style="background-image:url('https://images.unsplash.com/photo-1523398002811-999ca8dec234?w=900&q=85&auto=format&fit=crop')"></div>
                     <div class="collection-overlay"></div>
                     <div class="collection-content">
-                        <span class="collection-tag">Collection</span>
-                        <h3>Kingdom</h3>
+                        <span class="collection-tag">Collection II</span>
+                        <h3>Redeemed</h3>
+                        <span class="collection-verse">Gal. 3:13</span>
                         <span class="collection-cta">Explore &rarr;</span>
+                    </div>
+                </div>
+                <div class="collection-tile reveal" style="transition-delay:0.2s">
+                    <div class="collection-bg" style="background-image:url('https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=900&q=85&auto=format&fit=crop')"></div>
+                    <div class="collection-overlay"></div>
+                    <div class="collection-content">
+                        <span class="collection-tag">Collection III</span>
+                        <h3>Sanctified</h3>
+                        <span class="collection-verse">1 Thess. 5:23</span>
+                        <span class="collection-cta">Explore &rarr;</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== COMMUNITY ==================== -->
+        <section class="community-section">
+            <div class="container">
+                <div class="community-inner reveal">
+                    <div class="cross-icon gold" aria-hidden="true">
+                        <svg width="28" height="36" viewBox="0 0 28 36" fill="none">
+                            <rect x="11" y="0" width="6" height="36" fill="currentColor"/>
+                            <rect x="0" y="10" width="28" height="6" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h2>Join The Kingdom</h2>
+                    <p>Over <strong>12,000 believers</strong> wearing their faith boldly every day.</p>
+                    <div class="community-stats">
+                        <div class="stat">
+                            <span class="stat-num">12K+</span>
+                            <span class="stat-label">Believers</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-num">4.9★</span>
+                            <span class="stat-label">Avg. Rating</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-num">50+</span>
+                            <span class="stat-label">Designs</span>
+                        </div>
+                    </div>
+                    <div class="testimonials">
+                        <div class="testimonial">
+                            <p>"The quality is unlike anything I've worn. Every time I put it on, I'm reminded of my purpose."</p>
+                            <span>&mdash; Marcus T., Atlanta GA</span>
+                        </div>
+                        <div class="testimonial">
+                            <p>"SBG isn't just clothing. It's armor. I wear it as a daily declaration of faith."</p>
+                            <span>&mdash; Destiny R., Houston TX</span>
+                        </div>
+                        <div class="testimonial">
+                            <p>"Bought the Kingdom Tee for my son. He hasn't taken it off. The conversation starter alone was worth it."</p>
+                            <span>&mdash; Patricia K., Chicago IL</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -174,102 +285,131 @@
             <div class="container">
                 <div class="section-header reveal">
                     <span class="section-label">New Arrivals</span>
+                    <a href="#" class="view-all">View All &rarr;</a>
                 </div>
                 <div class="products-grid">
-                    <div class="product-card reveal" style="transition-delay: 0s">
+                    <div class="product-card reveal" style="transition-delay:0s">
                         <div class="product-img-wrap">
-                            <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1604006852748-903fccbc4019?w=700&q=85&auto=format&fit=crop')"></div>
-                            <div class="quick-add">Quick Add</div>
+                            <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1604006852748-903fccbc4019?w=700&q=85&auto=format&fit=crop')"></div>
+                            <div class="quick-add">+ Quick Add</div>
+                            <div class="product-badge new">New</div>
                         </div>
                         <div class="product-info">
                             <h4>Redeemed Hoodie</h4>
                             <span class="product-price">$55.00</span>
                         </div>
+                        <p class="product-verse-tag">Eph. 1:7</p>
                     </div>
-                    <div class="product-card reveal" style="transition-delay: 0.08s">
+                    <div class="product-card reveal" style="transition-delay:0.08s">
                         <div class="product-img-wrap">
-                            <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=700&q=85&auto=format&fit=crop')"></div>
-                            <div class="quick-add">Quick Add</div>
+                            <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=700&q=85&auto=format&fit=crop')"></div>
+                            <div class="quick-add">+ Quick Add</div>
                         </div>
                         <div class="product-info">
                             <h4>Faithful Tee</h4>
                             <span class="product-price">$35.00</span>
                         </div>
+                        <p class="product-verse-tag">Heb. 11:1</p>
                     </div>
-                    <div class="product-card reveal" style="transition-delay: 0.16s">
+                    <div class="product-card reveal" style="transition-delay:0.16s">
                         <div class="product-img-wrap">
-                            <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1590330297626-d7aff25a0431?w=700&q=85&auto=format&fit=crop')"></div>
-                            <div class="quick-add">Quick Add</div>
+                            <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1590330297626-d7aff25a0431?w=700&q=85&auto=format&fit=crop')"></div>
+                            <div class="quick-add">+ Quick Add</div>
                         </div>
                         <div class="product-info">
                             <h4>Grace Cap</h4>
                             <span class="product-price">$40.00</span>
                         </div>
+                        <p class="product-verse-tag">2 Cor. 12:9</p>
                     </div>
-                    <div class="product-card reveal" style="transition-delay: 0.24s">
+                    <div class="product-card reveal" style="transition-delay:0.24s">
                         <div class="product-img-wrap">
-                            <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?w=700&q=85&auto=format&fit=crop')"></div>
-                            <div class="quick-add">Quick Add</div>
+                            <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?w=700&q=85&auto=format&fit=crop')"></div>
+                            <div class="quick-add">+ Quick Add</div>
                         </div>
                         <div class="product-info">
                             <h4>Sovereign Crewneck</h4>
                             <span class="product-price">$60.00</span>
                         </div>
+                        <p class="product-verse-tag">Ps. 22:28</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- ==================== VERSE OF THE WEEK ==================== -->
-        <section class="verse-section">
+        <section class="verse-week">
             <div class="container">
-                <div class="verse-content reveal">
-                    <span class="verse-ref">Philippians 4:13</span>
-                    <p class="verse-text">"I can do all things through Christ who strengthens me."</p>
+                <div class="verse-week-inner reveal">
+                    <span class="section-label">Verse of the Week</span>
+                    <div class="verse-week-content">
+                        <div class="verse-week-cross" aria-hidden="true">&#10010;</div>
+                        <blockquote class="verse-week-text">
+                            "But seek first his kingdom and his righteousness,<br>and all these things will be given to you as well."
+                        </blockquote>
+                        <cite class="verse-week-ref">Matthew 6:33</cite>
+                    </div>
+                    <p class="verse-week-note">We update this verse weekly. It's not just branding — it's how we live.</p>
                 </div>
             </div>
         </section>
+
     </main>
 
     <!-- ==================== FOOTER ==================== -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-grid">
+            <div class="footer-top reveal">
                 <div class="footer-brand">
-                    <div class="footer-logo">SBG</div>
-                    <p>Higher Quality. Worn For A Higher Purpose.</p>
+                    <div class="footer-logo">
+                        <span class="footer-logo-sbg">SBG</span>
+                        <span class="footer-logo-sub">APPAREL</span>
+                    </div>
+                    <p class="footer-tagline">Higher Quality.<br>Worn For A Higher Purpose.</p>
+                    <div class="footer-verse">
+                        <span>Phil. 4:13</span>
+                    </div>
                     <div class="socials">
                         <a href="#" aria-label="Facebook">Fb</a>
                         <a href="#" aria-label="Instagram">Ig</a>
                         <a href="#" aria-label="TikTok">Tt</a>
                     </div>
                 </div>
-                <div class="footer-col">
-                    <h4>Shop</h4>
-                    <a href="#">Hats</a>
-                    <a href="#">Hoodies</a>
-                    <a href="#">T-Shirts</a>
-                    <a href="#">All Products</a>
-                </div>
-                <div class="footer-col">
-                    <h4>Company</h4>
-                    <a href="#">About Us</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Shipping Policy</a>
-                    <a href="#">Returns</a>
-                </div>
-                <div class="footer-col footer-newsletter">
-                    <h4>Stay Connected</h4>
-                    <p class="newsletter-desc">Join the Kingdom. Get early drops and exclusive offers.</p>
-                    <div class="newsletter-form">
-                        <input type="email" placeholder="your@email.com" aria-label="Email address">
-                        <button type="submit" aria-label="Subscribe">&rarr;</button>
+                <div class="footer-links-grid">
+                    <div class="footer-col">
+                        <h4>Shop</h4>
+                        <a href="#">Hats</a>
+                        <a href="#">Hoodies</a>
+                        <a href="#">T-Shirts</a>
+                        <a href="#">All Products</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Collections</h4>
+                        <a href="#">Crowned</a>
+                        <a href="#">Redeemed</a>
+                        <a href="#">Sanctified</a>
+                        <a href="#">New Arrivals</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <a href="#">Our Story</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Shipping</a>
+                        <a href="#">Returns</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Stay Connected</h4>
+                        <p class="newsletter-desc">Join the Kingdom. Get early drops and weekly verses.</p>
+                        <div class="newsletter-form">
+                            <input type="email" placeholder="your@email.com" aria-label="Email">
+                            <button type="submit" aria-label="Subscribe">&rarr;</button>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 SBG Apparel. All Rights Reserved.</p>
-                <p>Privacy Policy &nbsp;&middot;&nbsp; Terms of Service</p>
+                <p>Privacy &nbsp;&middot;&nbsp; Terms</p>
             </div>
         </div>
     </footer>
