@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SBG Apparel — Higher Quality. Worn For A Higher Purpose.">
+    <title>SBG Apparel | Higher Quality. Higher Purpose.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Site Header (sticky wrapper) -->
+    <header class="site-header">
+        <!-- Announcement Bar -->
+        <div class="announcement-bar">
+            <p>Free Shipping on orders over $75 &nbsp;&middot;&nbsp; Use code <strong>KINGDOM</strong> at checkout</p>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#" class="nav-brand">SBG</a>
+                <div class="nav-links">
+                    <a href="#">Hats</a>
+                    <a href="#">Hoodies</a>
+                    <a href="#">T-Shirts</a>
+                    <a href="#">Collections</a>
+                </div>
+                <div class="nav-actions">
+                    <button class="icon-btn" aria-label="Search">
+                        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                        </svg>
+                    </button>
+                    <button class="icon-btn cart-btn" aria-label="Cart">
+                        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+                            <line x1="3" y1="6" x2="21" y2="6"/>
+                            <path d="M16 10a4 4 0 01-8 0"/>
+                        </svg>
+                        <span class="cart-badge">2</span>
+                    </button>
+                    <button class="hamburger" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <div class="mobile-menu-inner">
+                <a href="#">Hats</a>
+                <a href="#">Hoodies</a>
+                <a href="#">T-Shirts</a>
+                <a href="#">Collections</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==================== HERO ==================== -->
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content reveal">
+                <span class="hero-label">New Season &nbsp;&middot;&nbsp; Spring 2026</span>
+                <h1>Higher<br>Quality.<br>Higher<br>Purpose.</h1>
+                <a href="#featured" class="btn-primary">Shop Now &rarr;</a>
+            </div>
+            <div class="hero-scroll reveal" style="transition-delay: 0.5s">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- ==================== FEATURED DROPS ==================== -->
+        <section id="featured" class="products-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-label">Featured Drops</span>
+                </div>
+                <div class="products-grid">
+                    <div class="product-card reveal" style="transition-delay: 0s">
+                        <div class="product-img-wrap">
+                            <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1556821840-3a63f15732ce?w=700&q=85&auto=format&fit=crop')"></div>
+                            <div class="quick-add">Quick Add</div>
+                        </div>
+                        <div class="product-info">
+                            <h4>Classic Crown Hoodie</h4>
+                            <span class="product-price">$55.00</span>
+                        </div>
+                    </div>
+                    <div class="product-card reveal" style="transition-delay: 0.08s">
+                        <div class="product-img-wrap">
+                            <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=700&q=85&auto=format&fit=crop')"></div>
+                            <div class="quick-add">Quick Add</div>
+                        </div>
+                        <div class="product-info">
+                            <h4>Kingdom Tee</h4>
+                            <span class="product-price">$35.00</span>
+                        </div>
+                    </div>
+                    <div class="product-card reveal" style="transition-delay: 0.16s">
+                        <div class="product-img-wrap">
+                            <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=700&q=85&auto=format&fit=crop')"></div>
+                            <div class="quick-add">Quick Add</div>
+                        </div>
+                        <div class="product-info">
+                            <h4>Chosen Cap</h4>
+                            <span class="product-price">$40.00</span>
+                        </div>
+                    </div>
+                    <div class="product-card reveal" style="transition-delay: 0.24s">
+                        <div class="product-img-wrap">
+                            <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1562157873-818bc0726f68?w=700&q=85&auto=format&fit=crop')"></div>
+                            <div class="quick-add">Quick Add</div>
+                        </div>
+                        <div class="product-info">
+                            <h4>Sanctified Crewneck</h4>
+                            <span class="product-price">$60.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== BRAND MANIFESTO ==================== -->
+        <section class="manifesto">
+            <div class="container">
+                <div class="manifesto-content reveal">
+                    <span class="section-label light">Our Mission</span>
+                    <blockquote>"Crafted With Purpose.<br>Worn With Conviction."</blockquote>
+                    <p>Every stitch is a statement of faith. We don't just make clothes&mdash;we make declarations. SBG Apparel exists for those who wear their beliefs on their sleeve, literally. Built from the ground up with quality that honors the one who created you.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== COLLECTIONS ==================== -->
+        <section class="collections-section">
+            <div class="collections-grid">
+                <div class="collection-tile reveal">
+                    <div class="collection-bg" style="background-image: url('https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?w=1000&q=85&auto=format&fit=crop')"></div>
+                    <div class="collection-overlay"></div>
+                    <div class="collection-content">
+                        <span class="collection-tag">Collection</span>
+                        <h3>Crowned</h3>
+                        <span class="collection-cta">Explore &rarr;</span>
+                    </div>
+                </div>
+                <div class="collection-tile reveal" style="transition-delay: 0.15s">
+                    <div class="collection-bg" style="background-image: url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=1000&q=85&auto=format&fit=crop')"></div>
+                    <div class="collection-overlay"></div>
+                    <div class="collection-content">
+                        <span class="collection-tag">Collection</span>
+                        <h3>Kingdom</h3>
+                        <span class="collection-cta">Explore &rarr;</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== NEW ARRIVALS ==================== -->
+        <section class="products-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-label">New Arrivals</span>
+                </div>
+                <div class="products-grid">
+                    <div class="product-card reveal" style="transition-delay: 0s">
+                        <div class="product-img-wrap">
+                            <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1604006852748-903fccbc4019?w=700&q=85&auto=format&fit=crop')"></div>
+                            <div class="quick-add">Quick Add</div>
+                        </div>
+                        <div class="product-info">
+                            <h4>Redeemed Hoodie</h4>
+                            <span class="product-price">$55.00</span>
+                        </div>
+                    </div>
+                    <div class="product-card reveal" style="transition-delay: 0.08s">
+                        <div class="product-img-wrap">
+                            <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=700&q=85&auto=format&fit=crop')"></div>
+                            <div class="quick-add">Quick Add</div>
+                        </div>
+                        <div class="product-info">
+                            <h4>Faithful Tee</h4>
+                            <span class="product-price">$35.00</span>
+                        </div>
+                    </div>
+                    <div class="product-card reveal" style="transition-delay: 0.16s">
+                        <div class="product-img-wrap">
+                            <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1590330297626-d7aff25a0431?w=700&q=85&auto=format&fit=crop')"></div>
+                            <div class="quick-add">Quick Add</div>
+                        </div>
+                        <div class="product-info">
+                            <h4>Grace Cap</h4>
+                            <span class="product-price">$40.00</span>
+                        </div>
+                    </div>
+                    <div class="product-card reveal" style="transition-delay: 0.24s">
+                        <div class="product-img-wrap">
+                            <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?w=700&q=85&auto=format&fit=crop')"></div>
+                            <div class="quick-add">Quick Add</div>
+                        </div>
+                        <div class="product-info">
+                            <h4>Sovereign Crewneck</h4>
+                            <span class="product-price">$60.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== VERSE OF THE WEEK ==================== -->
+        <section class="verse-section">
+            <div class="container">
+                <div class="verse-content reveal">
+                    <span class="verse-ref">Philippians 4:13</span>
+                    <p class="verse-text">"I can do all things through Christ who strengthens me."</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">SBG</div>
+                    <p>Higher Quality. Worn For A Higher Purpose.</p>
+                    <div class="socials">
+                        <a href="#" aria-label="Facebook">Fb</a>
+                        <a href="#" aria-label="Instagram">Ig</a>
+                        <a href="#" aria-label="TikTok">Tt</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <a href="#">Hats</a>
+                    <a href="#">Hoodies</a>
+                    <a href="#">T-Shirts</a>
+                    <a href="#">All Products</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Shipping Policy</a>
+                    <a href="#">Returns</a>
+                </div>
+                <div class="footer-col footer-newsletter">
+                    <h4>Stay Connected</h4>
+                    <p class="newsletter-desc">Join the Kingdom. Get early drops and exclusive offers.</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="your@email.com" aria-label="Email address">
+                        <button type="submit" aria-label="Subscribe">&rarr;</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SBG Apparel. All Rights Reserved.</p>
+                <p>Privacy Policy &nbsp;&middot;&nbsp; Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
